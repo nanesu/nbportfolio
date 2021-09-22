@@ -25,19 +25,19 @@ h3{
 }
 
 #home nav{
-position: fixed;
-top: 40px;
+  position: fixed;
+  top: 40px;
   }
 #home ul{
-overflow: hidden;
+  overflow: hidden;
 
 }
 #home li{
   font-size: 13px; 
 
-float: left;
-margin-right:80px;
-letter-spacing: 2.5px;
+  float: left;
+  margin-right:80px;
+  letter-spacing: 2.5px;
 
 }
 #home li:first-child{
@@ -49,7 +49,7 @@ letter-spacing: 2.5px;
   }
 
 
-#home .container{
+#home .title-container{
   position: relative;
 }
 #home .animation{
@@ -58,11 +58,9 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 -webkit-transform: translate(-50%, -50%);
-/* opacity: 0; */
+
 }
-/* .animation .inview {
-  opacity: 1;
-} */
+
 
 #home .animation .char{
   display: inline-block;
@@ -72,8 +70,6 @@ transform: translate(-50%, -50%);
           animation-name: movechara;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
-  /* -webkit-animation-timing-function: cubic-bezier(0.39, 1.57, 0.58, 1);
-          animation-timing-function: cubic-bezier(0.39, 1.57, 0.58, 1); */
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
   -webkit-animation-delay: 0s;
@@ -163,22 +159,13 @@ transform: translate(-50%, -50%);
 /* 変更ここまで */
 
 
-#home p{
+/* #home p{
   text-align: center;
   font-size: 16px;
   letter-spacing:12.5px;
   padding-top: 35px;
-}
-#home .home-bottom {
-overflow: hidden;
-padding-top:100px
-}
-#home .home-bottom p:first-child{
-float: left;
-margin-left: 100px;
+} */
 
-
-}
 
 
 
@@ -238,7 +225,6 @@ input:hover{
 
 
 
-
 #about .ABox{
   float: left;
 }
@@ -250,22 +236,27 @@ input:hover{
   padding-bottom: 30px;
   padding-left: 100px;
   text-align: left;
-  
+ 
 }
 
 #about p{
   width: 530px;
+  /* width: 440px; */
   text-align: justify;
   /* font-size: 16px; */
   font-size: 14px;
   letter-spacing: 2.1px;
   line-height: 32.9px;
-  padding-left: 100px;
-  /* padding-bottom: 120px; */
   margin-bottom: 70px;
+  padding-left: 100px;
+  /* margin-left: 100px; */
 }
 
-
+/* .AboutWrap{
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+} */
   
 
 
@@ -424,15 +415,15 @@ letter-spacing: 13.9px;
 #works .container{
   display: flex;
   justify-content: center;
-  
-  
+  flex-wrap: wrap;
+ 
   }
 
 #works .container figure{
      margin-right: 10px;
       width: 200px;
       height: 200px;
-      
+      margin-bottom: 60px;
     
       
 }
@@ -460,13 +451,10 @@ letter-spacing: 13.9px;
   text-align: center;
   font-size: 13px;
   letter-spacing: 5px;
-  position: relative;
+  /* position: relative; */
   
 }
-#works .container figcaption a{
-  text-decoration: none;
-  color: gray;
-}
+
 #works .container figcaption a:hover{
   color: #000000;
   
@@ -482,4 +470,8 @@ letter-spacing: 13.9px;
  right: 0;
  text-align: center;
 
+}
+
+canvas{
+  z-index: -1;
 }
