@@ -167,3 +167,38 @@ grad.addColorStop(0.5 , "pink");
 grad.addColorStop(1.0 , "blue");
 
 
+
+
+// 着火アニメーション
+// オプションを指定する。
+const options = {
+  root: document.querySelector('.root'),
+  rootMargin: '5%',
+  threshold: [0.8, 1.0]
+}
+
+// オプションとともにIntersectionObserverオブジェクトを作成する。
+const observer = new IntersectionObserver((entries) => {
+  for(const e of entries) {
+    // console.log(e);
+    if (e.intersectionRatio ===1 ) {
+      startGraph();
+     
+    } 
+  }
+}, options);
+
+// 監視したい要素をobserveする。
+observer.observe(document.querySelector('.label'));
+
+let bar =document.getElementsByClassName("bar");
+function startGraph() {
+  bar[0].style.animationPlayState = "running";
+  bar[1].style.animationPlayState = "running";
+  bar[2].style.animationPlayState = "running";
+  bar[3].style.animationPlayState = "running";
+  bar[4].style.animationPlayState = "running";
+  bar[5].style.animationPlayState = "running";
+  bar[6].style.animationPlayState = "running";
+  bar[7].style.animationPlayState = "running";
+}

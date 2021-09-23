@@ -301,6 +301,7 @@ margin-left: 450px;
   position: relative;
   text-align: left;
   max-width: 590px;
+  max-width: 598px;
   width: 0%;
   border-radius: 2px;
   font-size: 9px;
@@ -312,11 +313,17 @@ margin-left: 450px;
   padding: 5px;
   margin-bottom: 20px;
   list-style-type: none;
-    /* アニメーション追加 */
-    overflow: hidden;
+  /* アニメーション追加 */
+  overflow: hidden;
   -webkit-animation: 2s linear 0s 1 forwards move_graph;
-          animation: 2s linear 0s 1 forwards move_graph;
+  animation: 2s linear 0s 1 forwards move_graph;
+  animation-play-state: paused;
+    
 }
+
+
+
+
 @-webkit-keyframes move_graph { 
   0%{ 
     opacity: 0;
@@ -416,7 +423,8 @@ letter-spacing: 13.9px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
- 
+  padding-bottom: 40px;
+
   }
 
 #works .container figure{
@@ -435,6 +443,8 @@ letter-spacing: 13.9px;
   border-radius:15px;
   box-shadow: 0 0 10px gray;
  
+
+
   
 }
 
@@ -464,14 +474,135 @@ letter-spacing: 13.9px;
 
 #works .copyright{
  font-size: 13px;
- position: absolute;
+ text-align: center;
+ /* position: fixed;
  bottom: 5px;
  left: 0;
- right: 0;
- text-align: center;
+ right: 0; */
+
+ /* paddingtopで常に下に配置 */
+ /* padding-top: 100%; */
+ /* 
+ border-radius: 50%;
+
+ margin: 0 auto;
+ line-height: 150px;
+ color: #fff;
+  width: 150px;
+ height: 150px;
+ background-color: gray;
+ */
+
 
 }
 
-canvas{
+
+
+.copyright{
+  width: 350px;
+  /* height: 120px; */
+  color: #fff;
+  color: gray;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  margin-top: 130px;
+  padding-bottom: 20px;
+}
+/* .copyright::before{
+  width: 346px;
+  height: 346px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: gray;
+  content: "";
   z-index: -1;
+}
+.copyright::after{
+  width: 100%;
+  height: 30px;
+
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: gray;
+  content: "";
+  z-index: -1;
+}
+.footerBabble{
+  margin-top: 80px;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  
+  line-height: 200px;
+} */
+/* 
+
+.footerBabble::after{
+ position: absolute;
+ top: 0;
+ left: -30px;
+ content: "";
+ width: 100%;
+ height: 100%;
+ border-radius: 50%;
+ background-color: #000000;
+ animation-delay: 0.24s;
+
+}
+.footerBabble::before{
+  position: absolute;
+  top: 0;
+  left: 30px;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #000000;
+  
+  animation-duration: 0.5s;
+ }
+
+ */
+/* .footerBabble{
+  width:30px;
+  height: 30px;
+  margin: 0 auto;
+  animation-name: jump;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+
+} */
+/* .footerBabble::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  max-width: 20px;
+  width: 10%;
+  max-height: 20%;
+  height: 10%;
+  border-radius: 50%;
+  background-color: #000000;
+  
+  animation-duration: 0.5s;
+ } */
+
+@keyframes jump{
+  0%{
+    opacity: 0;
+    transform: rotate(-15deg);
+    width: 0;
+  }100%{
+    opacity: 1;
+    transform: rotate(0);
+    width: 100%;
+  }
 }
