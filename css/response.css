@@ -108,8 +108,7 @@
  width: 100% ;
  }
  #home ul{
-  width: 280px;
-  margin-left: 60px;
+  
 
 }
  #home li{
@@ -119,7 +118,7 @@
 
 }
 #home li:first-child{
-  margin-left:0;
+  margin-left:60px;
 }
 
  #home .animation .char{
@@ -133,7 +132,7 @@
  #about h2{
   font-size: 20px;
   padding-left: 0;
-  padding-top: 40px;
+  padding-top: 50px;
 }
 #about p{
   width: 300px;
@@ -155,7 +154,7 @@
    
 }
 #works h2{
-  padding: 40px 0 30px 0;
+  padding: 50px 0 30px 0;
   letter-spacing: 13.9px;
   font-size: 20px;
 }
