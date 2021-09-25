@@ -2,17 +2,161 @@
 /* CSS Document */
 
 /*  ------------  レスポンシブ   --------------------*/
-@media screen and (min-width: 480px){
+@media screen and (min-width: 1025px){
+
+  /*画面幅が1025px以上の場合（PC）に適用するCSSを記入*/
+}
+
+
+@media screen and (max-width: 1024px){
+
+  /*画面幅が1024px以下の場合（タブレット）に適用するCSSを記入 タブレット：768px～1024px*/
+  #home .animation .char{
+    font-size: 26.5px;
+  
+  }
+
+  #works .container{
+    width: 450px;
+    margin: 0 auto;
+  }
+
+  .graphContainer{
+      margin-left: 100px;
+      width: 602px;
+      margin-top: 70px;
+     
+  }
+
+}
+
+@media screen and (max-width: 680px){
+  /*画面幅が●●px以下の場合に適用するCSSを記入   PC：1025px以上*/
+ img {
+ width: 100% ;
+ }
+ #about .ABox{
+  float: none;
+  text-align: left;
+}
+#home li{
+  font-size: 12.5px; 
+  margin-right:80px;
+  letter-spacing: 2.5px;
+
+}
+#home li:first-child{
+  margin-left:80px;
+}
+#home .animation .char{
+  font-size: 21.5px;
+  letter-spacing: 9.5px;
+}
+
+#about h2{
+  padding-left: 80px;
+}
+#about p{
+  /* font-size: 13.5px; */
+  width: 430px;
+  line-height: 26px;
+  margin-bottom: 70px;
+  padding-left: 80px;
+  /* margin-left: 100px; */
+}
+.inputWrap{
+  margin-left: 80px;
+  margin-bottom: 30px;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+
+}
+ #works .container figure{
+  margin-right: 10px;
+   width: 380px;
+   height: 220px;
+   margin-bottom: 60px;
+ 
+   
+}
+.graphContainer{
+  margin-left: 80px;
+  width: 602px;
+  margin-top: 70px;
+ 
+}
+#works .attention{
+  font-size: 13px;
+  width: 380px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 50px;
+  letter-spacing: 2.1px;
+}
+
+
 
 }
 
 
 
 @media screen and (max-width: 480px){
-  img {
-  width: 100% ;
-  }
+  /*画面幅が●●px以下の場合に適用するCSSを記入   PC：1025px以上*/
+ img {
+ width: 100% ;
+ }
+ #home li{
+  font-size: 12.5px; 
+  margin-right:35px;
+  letter-spacing: 2.5px;
+
+}
+ #home .animation .char{
+  font-size: 15.5px;
+  letter-spacing: 4.5px;
+ }
+ #about .ABox{
+   width: 300px;
+  margin: 0 auto;
+}
+ #about h2{
+  padding-left: 0;
+}
+#about p{
+  width: 300px;
+  margin-bottom: 60px;
+  padding-left: 0;
+}
+.inputWrap{
+  margin-left: 0;
+}
+#works .container{
+  width: 300px;
+}
+#works .container figure{
+  margin-right: 10px;
+   width: 300px;
+   height: 180px;
+   margin-bottom: 60px;
+ 
+   
+}
+#works .attention{
+  font-size: 13px;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 35px;
+
+}
 
 
 
+}
+
+@media screen and (max-width: 767px){
+
+  /*画面幅が767px以下の場合（スマホ）に適用するCSSを記入*/
 }

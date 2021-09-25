@@ -42,7 +42,7 @@ h3{
 }
 #home li:first-child{
   margin-left:100px;
-  }
+}
   #home #can{
     position: absolute;
     top:0;
@@ -51,6 +51,7 @@ h3{
 
 #home .title-container{
   position: relative;
+
 }
 #home .animation{
 position: absolute;
