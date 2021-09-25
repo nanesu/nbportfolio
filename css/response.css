@@ -107,12 +107,21 @@
  img {
  width: 100% ;
  }
+ #home ul{
+  width: 280px;
+  margin-left: 60px;
+
+}
  #home li{
   font-size: 12.5px; 
   margin-right:35px;
   letter-spacing: 2.5px;
 
 }
+#home li:first-child{
+  margin-left:0;
+}
+
  #home .animation .char{
   font-size: 15.5px;
   letter-spacing: 4.5px;
@@ -123,6 +132,7 @@
 }
  #about h2{
   padding-left: 0;
+  padding-top: 35px;
 }
 #about p{
   width: 300px;
@@ -151,7 +161,10 @@
   padding-bottom: 35px;
 
 }
-
+#works h2{
+  padding: 35px 0 30px 0;
+  letter-spacing: 13.9px;
+  }
 
 
 }
