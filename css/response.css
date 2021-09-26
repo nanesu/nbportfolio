@@ -73,6 +73,83 @@
   border-radius: 50%;
 
 }
+/* グラフサイズ変更 */
+
+.graphContainer{
+  margin: 0 auto;
+  width: 400px;
+  float: none;
+ 
+}
+.graph{
+  width: 400px;
+  
+}
+/* グラフレイアウトの縦線 */
+.vertical_Line{
+  margin-left: 100px;
+  }
+  .vertical_Line:nth-child(2){
+  margin-left: 200px;
+  }
+  .vertical_Line:nth-child(3){
+  margin-left: 300px;
+  }
+/* グラフ棒 */
+.bar{
+  max-width: 398px;
+  max-width: 398px;
+  font-size: 9px;
+}
+
+.bar1{
+  max-width: 60%; 
+}
+.bar2{
+  max-width: 60%;
+}
+.bar3{
+  max-width: 50.5%;
+}
+.bar4{
+  max-width: 36.5%;
+}
+
+.bar5, .bar6, .bar7{
+  max-width: 25%;
+}
+
+.bar8{
+  max-width: 50.5%;
+}
+/* グラフのラベル */
+
+.label-name .label{
+  font-size: 12px;
+  letter-spacing: 6px;
+  width: 100px;
+ 
+}
+
+.label:first-of-type{
+  margin-left: -25px;
+}
+.label:nth-of-type(3){
+  margin-left: -9.5px;
+}
+.label:nth-of-type(4){
+  margin-left: 7px;
+}
+.label:nth-of-type(5){
+
+  margin-left: -8.5px;
+}
+
+/* グラフここまで */
+
+
+
+
  #works .container figure{
   margin-right: 10px;
    width: 380px;
@@ -98,6 +175,13 @@
 
 
 
+
+
+
+
+
+
+
 }
 
 
@@ -107,10 +191,10 @@
  img {
  width: 100% ;
  }
- #home ul{
+ /* #home ul{
   
 
-}
+} */
  #home li{
   font-size: 12.5px; 
   margin-right:35px;
@@ -142,6 +226,106 @@
 .inputWrap{
   margin-left: 0;
 }
+
+/* スマホのグラフ */
+/* グラフサイズ変更 */
+
+.graphContainer{
+  margin: 0 auto;
+  width: 280px;
+  float: none;
+ 
+}
+.graph{
+  width: 280px;
+  
+}
+/* グラフレイアウトの縦線 */
+.vertical_Line{
+  margin-left: 70px;
+  }
+  .vertical_Line:nth-child(2){
+  margin-left: 140px;
+  }
+  .vertical_Line:nth-child(3){
+  margin-left: 210px;
+  }
+.bar{
+  max-width: 278px;
+  max-width: 278px;
+  font-size: 9px;
+}
+
+.bar1{
+  max-width: 60%; 
+}
+.bar2{
+  max-width: 60%;
+}
+.bar3{
+  max-width: 50.5%;
+}
+.bar4{
+  max-width: 36.5%;
+}
+
+.bar5, .bar6, .bar7{
+  max-width: 25%;
+}
+
+.bar8{
+  max-width: 50.5%;
+}
+/* グラフのラベル */
+
+.label-name .label{
+  font-size: 12px;
+  letter-spacing: 6px;
+  width: 70px;
+ 
+}
+
+.label:first-of-type{
+  margin-left: -25px;
+}
+.label:nth-of-type(3){
+  margin-left: -9.5px;
+}
+.label:nth-of-type(4){
+  margin-left: 7px;
+}
+.label:nth-of-type(5){
+
+  margin-left: -8.5px;
+}
+
+/* スマホのグラフここまで */
+
+
+
+
+
+
+
+/* スマホ版のグラフ */
+/* #about .responseSkills{
+  display: block;
+  padding-bottom: 120px;
+  width: 300px;
+  margin: 0 auto;
+}
+#about .responseSkills h3{
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+#about .responseSkills li{
+  width: 35px;
+  display: inline-block;
+} */
+
+
+/* ここまで */
+
 #works .container{
   width: 300px;
 }
