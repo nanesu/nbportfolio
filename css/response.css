@@ -206,11 +206,11 @@
 }
 
  #home .animation .char{
-  font-size: 18.5px;
-  letter-spacing: 4.5px;
+  font-size: 17.5px;
+  letter-spacing: 4px;
  }
  #about .ABox{
-   width: 300px;
+   width: 290px;
   margin: 0 auto;
 }
  #about h2{
@@ -219,7 +219,7 @@
   padding-top: 50px;
 }
 #about p{
-  width: 300px;
+  width: 290px;
   margin-bottom: 60px;
   padding-left: 0;
 }
@@ -329,11 +329,11 @@
 /* ここまで */
 
 #works .container{
-  width: 300px;
+  width: 290px;
 }
 #works .container figure{
   margin-right: 10px;
-   width: 300px;
+   width: 290px;
    height: 180px;
    margin-bottom: 60px;
  
@@ -346,7 +346,7 @@
 }
 #works .attention{
   font-size: 13px;
-  width: 300px;
+  width: 290px;
   margin: 0 auto;
   text-align: center;
   padding-bottom: 35px;
