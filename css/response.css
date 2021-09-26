@@ -238,7 +238,7 @@
 }
 .graph{
   width: 280px;
-  
+  height: 260px;
 }
 /* グラフレイアウトの縦線 */
 .vertical_Line{
@@ -254,10 +254,12 @@
   max-width: 278px;
   max-width: 278px;
   font-size: 9px;
+  margin-bottom: 10px;
 }
 
 .bar1{
   max-width: 60%; 
+  margin-top: 15px;
 }
 .bar2{
   max-width: 60%;
