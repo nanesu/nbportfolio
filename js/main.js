@@ -70,15 +70,28 @@ window.addEventListener('mousemove' , (e)=>{
        this.kill = true;
      }
 
-     if(detectCollision(mouse.x, mouse.y, mouse.radius,  this.x, this.y, this.radius )){
+     if(detectCollision(mouse.x, mouse.y, mouse.radius,  this.x, this.y, this.radius ) && this.kill != true){
        
        ctx.fillStyle = grad;
        ctx.fill();
        
       //  ctx.strokeStyle = "transparent";
       //  ctx.stroke();
-      
+      grad = ctx.createRadialGradient(this.x , this.y , 20 , this.x , this.y , this.radius );
+      grad.addColorStop(0.0 , "rgba(27,0,36,0.2903536414565826)");
+      grad.addColorStop(1.0 , "rgba(196,115,235,1)");
+      grad.addColorStop(0.5 , "rgba(4,165,198,1)");
      }
+
+//スマホサイズ４８０以下ならパーティクルサイズを小さくする
+     if(can.width<=480){
+      BABBLE_NUMBER = 4;
+    }else {
+      BABBLE_NUMBER = 8;
+    }
+
+
+
 
 
 
@@ -103,7 +116,7 @@ window.addEventListener('mousemove' , (e)=>{
 
 
 let babbles = [];
-const BABBLE_NUMBER = 8;
+let BABBLE_NUMBER = 6;
 
 function drawBabble(){
   for(let i=0; i<BABBLE_NUMBER; i++){
@@ -144,8 +157,12 @@ AnimationLoop();
 
                            
 
-//レンダーのループ
+//アニメーションのループ
 function AnimationLoop(){
+  can.width= window.innerWidth;
+  can.height = window.innerHeight;
+
+ 
 
   ctx.clearRect(0,0,can.width,can.height);
 
@@ -160,11 +177,9 @@ function AnimationLoop(){
 
 
 
-const grad = ctx.createRadialGradient( 0 , 0 , can.width , can.height , 200 , 180 );
+//ホバー時の円のグラデーション用
+let  grad=[];
 
-grad.addColorStop(0.0 , "skyblue");
-grad.addColorStop(0.5 , "pink");
-grad.addColorStop(1.0 , "blue");
 
 
 
@@ -202,3 +217,12 @@ function startGraph() {
   bar[6].style.animationPlayState = "running";
   bar[7].style.animationPlayState = "running";
 }
+
+
+
+window.addEventListener('DOMContentLoaded', function(){
+  window.addEventListener('resize', function(){
+    // console.log("Width:" + window.innerWidth);
+    // console.log("Height:" + window.innerHeight);
+  });
+});
