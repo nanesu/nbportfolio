@@ -442,16 +442,24 @@ letter-spacing: 13.9px;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center ;
+  object-position: center center ;
   border-radius:15px;
   box-shadow: 0 0 10px gray;
- 
-
-
-  
+   
 }
 
+#works figure:nth-child(2) img{
 
+  object-position: left center ;
+
+   
+}
+#works figure:nth-child(3) img{
+
+  object-position: left center ;
+
+   
+}
 
 
 
